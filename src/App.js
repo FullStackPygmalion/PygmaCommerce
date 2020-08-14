@@ -1,13 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
-import Header from './Components/header.js';
+import '../src/App';
+import Header from './Components/header/header.js';
+import Login from './Components/login/login.js';
+import Footer from './Components/footer/footer.js';
 import './css/bootstrap.css';
 
 function App() {
   return (
     <div>
       <Header/>
+      
+      
+      <Login/>
+
+     
+      <Footer/>
     </div>
     /*<div className="App">
       <header className="App-header">

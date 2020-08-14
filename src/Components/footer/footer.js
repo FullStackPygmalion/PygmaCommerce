@@ -1,10 +1,14 @@
 import React from 'react';
-import logo from '../logo.svg';
-import './header.css';
+import logo from '../../logo.svg';
+import '../footer/footer.css';
 
-function Header(){
+function Footer(){
     return(
-        <header class="d-flex justify-content-between pl-5 pr-5 pt-2">
+        <footer class="d-flex justify-content-center pl-5 pr-5 pt-2">
+             <figure className="container-logo-header d-flex justify-content-center align-items-center mb-0 mr-0">
+                <img src={logo} className="logo-react" alt="Logo"/>
+            </figure>
+
             <ul class="nav">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Inicia Sesión</a>
@@ -19,12 +23,8 @@ function Header(){
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li> */}
             </ul>
-
-            <figure className="container-logo-header d-flex justify-content-center align-items-center mb-0 mr-0">
-                <img src={logo} className="logo-react" alt="Logo"/>
-            </figure>
-        </header>
+        </footer>
     )
 }
 
-export default Header
+export default Footer
