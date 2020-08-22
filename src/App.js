@@ -8,7 +8,8 @@ import './css/bootstrap.css';
 import ProductDetail from './components/ProductDetail'
 
 function App() {
-  const product = {
+  /* Cambio desde OtroComponente*/
+  const producta = {
     name: 'Chocorramo',
     sku: 'CHR',
     description: 'Torta tradicional con cubierta de chocolate',
