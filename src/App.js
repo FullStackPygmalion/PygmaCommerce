@@ -23,7 +23,7 @@ function App() {
             <div className='conainter'>
       <ProductDetail product={product} />
     </div>
-      
+      <NewComponent />
       <Login/>
 
      
