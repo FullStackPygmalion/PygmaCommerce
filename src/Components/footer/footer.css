@@ -1,0 +1,18 @@
+.logo-react { height: 5vmin; pointer-events: none;}
+/* .container-logo-header {} */
+
+@media (prefers-reduced-motion: no-preference) {
+    .logo-react {
+        animation: logo-react-spin infinite 20s linear;
+    }
+}
+      
+@keyframes logo-react-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+    
