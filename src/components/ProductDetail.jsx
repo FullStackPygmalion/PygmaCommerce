@@ -1,4 +1,9 @@
-import React from 'react'
+import React from 'react';
+
+/**
+ * @description Product Detail Component
+ * @author      Alejandro Martinez
+ */
 
 const ProductDetail = ({ product }) => {
   return (
@@ -44,8 +49,7 @@ const ProductDetail = ({ product }) => {
                   <tr className='d-flex'>
                     <th className='col-lg-3'>Dimensiones</th>
                     <td className='col-lg'>
-                      {product.height} (Alto) x {product.width} (Ancho) x{' '}
-                      {product.lenght} (Largo)
+                      {product.height} (Alto) x {product.width} (Ancho) x {product.lenght} (Largo)
                     </td>
                   </tr>
                   <tr className='d-flex'>
@@ -63,7 +67,7 @@ const ProductDetail = ({ product }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProductDetail
+export default ProductDetail;
