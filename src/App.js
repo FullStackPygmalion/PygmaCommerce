@@ -1,16 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import '../src/App';
-import Header from './Components/header/header.js';
-import Login from './Components/login/login.js';
-import Footer from './Components/footer/footer.js';
+import Header from './components/header/header.js';
+import Login from './components/login/login.js';
+import Footer from './components/footer/footer.js';
 import './css/bootstrap.css';
-import ProductDetail from './components/ProductDetail'
+import ProductDetail from './components/ProductDetail.jsx'
 
 function App() {
 
    /*Cambio desde developer */
-  const producto = {
+  const product = {
     name: 'Chocorramo',
     sku: 'CHR',
     description: 'Torta tradicional con cubierta de chocolate',
@@ -22,31 +22,17 @@ function App() {
   return (
     <div>
       <Header/>
-            <div className='conainter'>
-      <ProductDetail product={product} />
-    </div>
-      <NewComponent />
+
+      <div className='container'>
+        <ProductDetail product={product} />
+      </div>
+     
       <Login/>
 
      
       <Footer/>
     </div>
-    /*<div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>*/
+    
   );
 }
 

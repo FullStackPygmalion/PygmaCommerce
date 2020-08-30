@@ -1,6 +1,7 @@
+// import React from './node_modules/react';
 import React from 'react';
 import logo from '../../logo.svg';
-import '../header/header.css';
+import './header.css';
 
 function Header(){
     return(
